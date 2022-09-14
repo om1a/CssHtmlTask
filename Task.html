@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<style>.header{ 
+    
+    	background:#050173;
+		display: flex; 
+		border-bottom: white;
+	} 
+     
+html,body{ 
+  margin:0; 
+  padding:0; 
+} 
+ 
+.footer{ 
+	height:50px;
+    width:100%;
+    bottom:0px;
+    left:0px;
+    background:#050173;
+    position:fixed;
+} 
+    div.parent{ 
+        display: flex; 
+    } 
+    div.child1{ 
+        width: 20%; 
+        text-align: center; 
+        box-sizing: border-box; 
+        border: 1px solid #000000; 
+        height: 100vh; 
+        background-color:#18BBB3;
+		justify-content: center; 
+    	align-content: center; 
+    	flex-wrap: wrap;
+		display: inline-flex;
+        
+    } 
+	div.child2{ 
+		padding: 40px 0;
+        width: 80%; 
+        background-color:#43E124;
+        text-align: center; 
+        box-sizing: border-box; 
+        border: 1px solid #000000; 
+        height: 100vh;
+		justify-content: center; 
+    	align-content: center; 
+    	flex-wrap: wrap;
+		display: inline-flex;
+	
+
+    } 
+.buttonC 
+  { 
+      position: fixed; 
+      bottom: 30px; 
+      right: 30px; 
+      z-index: 100; 
+      height: 75px; 
+      width: 75px; 
+      border-radius: 100%; 
+      background-color:aquamarine; 
+  }
+	body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}</style>
+	<script> var count = 0;
+function addContant() {
+      var x = document.getElementById("a1"); 
+      x.innerHTML = x.innerHTML+ "<div>Line</div>" + count;  
+      count++; 
+}
+function removeContant(){
+		  var x = document.querySelector("#a1");
+		  console.log(x);
+		  x.innerHTML="";
+}</script>
+	<header class="header"> 
+    <div> 
+		<button onclick="addContant()">Add Contant</button>
+		<button onclick="removeContant()">Remove Contant</button>
+		<p id="a1"></p>
+
+    </div> 
+  </header> 
+<body>
+	    <div class="parent"> 
+          <div class="child1" ><h1>Omar</h1></div> 
+          <div class="child2"><h1>Omar</h1></div> 
+      </div> 
+		<button class="buttonC"></button>
+
+</body>
+	<footer class="footer"> 
+    <p>footer</p> 
+  </footer>
+</html>
