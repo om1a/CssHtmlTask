@@ -11,7 +11,15 @@ html,body{
   margin:0; 
   padding:0; 
 } 
- 
+  .div22{
+          height: 50%; 
+          flex: content;
+          background-color: rgb(85, 83, 233);
+          margin-bottom: 1rem;
+          box-sizing: border-box; 
+          border: 2px solid rgb(0, 0, 0);
+         
+  }
 .footer{ 
 	height:50px;
     width:100%;
@@ -37,18 +45,14 @@ html,body{
         
     } 
 	div.child2{ 
-		padding: 40px 0;
-        width: 80%; 
-        background-color:#43E124;
-        text-align: center; 
-        box-sizing: border-box; 
-        border: 1px solid #000000; 
-        height: 100vh;
-		justify-content: center; 
-    	align-content: center; 
-    	flex-wrap: wrap;
-		display: inline-flex;
-	
+		width: 80%;  
+          background: rgb(160, 204, 224);
+          padding: 40px 0;
+          text-align: center;
+          box-sizing: border-box; 
+          border: 1px solid rgb(0, 0, 0);
+          height:100vh;
+          margin-bottom: 30px;   
 
     } 
 .buttonC 
@@ -88,10 +92,10 @@ function removeContant(){
 <body>
 	    <div class="parent"> 
           <div class="child1" ><h1>Omar</h1></div> 
-          <div class="child2"><h1>Omar</h1></div> 
-      </div> 
+          <div class="child2"><div class="div22">Chaild 1</div>
+          <div class="div22">Chaild 2</div>
+      </div></div> 
 		<button class="buttonC"></button>
-
 </body>
 	<footer class="footer"> 
     <p>footer</p> 
